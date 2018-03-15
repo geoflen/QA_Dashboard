@@ -23,3 +23,17 @@ $factory->define(qadashboard\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(qadashboard\Auditor::class, function (Faker $faker) {
+    return [
+        'name' => $faker->name,
+        'phone_number' => $faker->phoneNumber,
+        'organization' => $faker->company,
+        'email' => $faker->unique()->email,
+        'designation' => $faker->text(),
+    ];
+});
+
+
+
+

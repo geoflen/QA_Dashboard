@@ -1,0 +1,1 @@
+resources/views/resources/tasks/create.blade.php
